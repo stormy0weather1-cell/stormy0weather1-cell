@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Photo Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/gallery.js"></script>
+</head>
+<body onload="addTabIndex()">
+
+    <h1>Accessible Photo Gallery</h1>
+
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <div id="thumbnails">
+
+        <figure onfocus="upDate(this.querySelector('img'))" onblur="unDo()">
+            <img class="preview"
+                 alt="Galaxy"
+                 src="images/photo6.jpg"
+                 onmouseover="upDate(this)" onmouseout="unDo()">
+        </figure>
+
+        <figure onfocus="upDate(this.querySelector('img'))" onblur="unDo()">
+            <img class="preview"
+                 alt="Galaxy SXSW"
+                 src="images/photo1.jpg"
+                 onmouseover="upDate(this)" onmouseout="unDo()">
+        </figure>
+
+        <figure onfocus="upDate(this.querySelector('img'))" onblur="unDo()">
+            <img class="preview"
+                 alt="Galaxy Night"
+                 src="images/photo5.jpg"
+                 onmouseover="upDate(this)" onmouseout="unDo()">
+        </figure>
+
+        <figure onfocus="upDate(this.querySelector('img'))" onblur="unDo()">
+            <img class="preview"
+                 alt="Galaxy Stars"
+                 src="images/photo1.jpg"
+                 onmouseover="upDate(this)" onmouseout="unDo()">
+        </figure>
+
+        <figure onfocus="upDate(this.querySelector('img'))" onblur="unDo()">
+            <img class="preview"
+                 alt="Galaxy View"
+                 src="images/photo2.jpg"
+                 onmouseover="upDate(this)" onmouseout="unDo()">
+        </figure>
+
+        <figure onfocus="upDate(this.querySelector('img'))" onblur="unDo()">
+            <img class="preview"
+                 alt="Galaxy Stars"
+                 src="images/photo3.jpg"
+                 onmouseover="upDate(this)" onmouseout="unDo()">
+        </figure>
+
+    </div>
+
+</body>
+</html>
